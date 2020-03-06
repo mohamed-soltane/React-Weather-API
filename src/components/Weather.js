@@ -2,24 +2,42 @@ import React, { Component } from 'react';
 const Weather = (props) => {
 
         return (
-            <div>
+            <div className="info">
                {
-                   props.tempreature && <p>tempreature : {props.tempreature}</p>
+                   props.tempreature &&
+                    <p className="info_key">tempreature:
+                    <span className="info_value">{props.tempreature} </span>
+                    </p>
                }
                {
-                   props.city && <p>City : {props.city}</p>
+                   props.city &&
+                    <p className="info_key">City :
+                    <span className="info_value"> {props.city} </span>
+                    </p>
                }
                {
-                   props.country && <p>country : {props.country}</p>
+                   props.country &&
+                    <p className="info_key">country :
+                    <span className="info_value"> {props.country}</span>
+                    </p>
                }
                {
-                   props.humidity && <p>humidity : {props.humidity}</p>
+                   props.humidity &&
+                    <p className="info_key">humidity :
+                    <span className="info_value"> {props.humidity} </span>
+                    </p>
                }
                {
-                   props.description && <p>description : {props.description}</p>
+                   props.description && 
+                    <p className="info_key">description :
+                     <span className="info_value">{props.description}</span>
+                    </p>
                }
                {
-                   props.error && <p>error : {props.error}</p>
+                   props.error && 
+                   <p className="info_key">error :
+                    <span className="info_value">{props.error}</span>
+                    </p>
                }
             </div>
         )
